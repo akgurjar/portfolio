@@ -1,0 +1,39 @@
+header {
+  display: block;
+  background-color: #e0e0ff;
+}
+
+nav {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  text-decoration: none;
+  font-size: 24px;
+  color: #005cbb;
+  font-weight: 500;
+}
+
+.banner {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  & > div {
+    flex: 1;
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.about {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
