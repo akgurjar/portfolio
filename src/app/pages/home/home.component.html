@@ -7,7 +7,7 @@
         About Me
       </a>
       <a mat-button routerLink="/"><mat-icon>code</mat-icon>Services</a>
-      <a mat-button routerLink="/"><mat-icon>article</mat-icon>Portfolio</a>
+      <a mat-button routerLink="/"><mat-icon>engineering</mat-icon>Portfolio</a>
       <a mat-button routerLink="/"><mat-icon>article</mat-icon>Blogs</a>
     </div>
     <a mat-flat-button routerLink="/">Let's Talk</a>
@@ -30,28 +30,68 @@
         </button>
       </div>
     </div>
-    <div></div>
+    <svg
+      style="height: 360px; width: 360px"
+      viewBox="0 0 479 467"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <mask id="mask0" mask-type="alpha">
+        <path
+          d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+        />
+      </mask>
+      <g mask="url(#mask0)">
+        <path
+          fill="#005cbb"
+          d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+        />
+        <image
+          class="home__blob-img"
+          x="0"
+          y="0"
+          width="100%"
+          href="photo.jpg"
+        />
+      </g>
+    </svg>
   </div>
 </header>
 <div class="about max-width">
   <h1>About Me</h1>
-  <p>
-    Technical Lead with 6+ years of experience in architecting and maintaining
-    scalable, high-performance systems using JavaScript/TypeScript frameworks
-    like Node.js, Deno, and Angular. Adept at microservices architecture,
-    backend development, and database management (PostgreSQL, MongoDB).
-    Proficient in leading teams, gathering requirements, and delivering
-    successful deployments using AWS and Kubernetes. Enthusiastic about learning
-    new technologies and improving system efficiency.
-  </p>
-  <br />
-  <div>
-    <a routerLink="/" mat-fab> <mat-icon svgIcon="facebook"></mat-icon> </a
-    >&nbsp;&nbsp;
-    <a routerLink="/" mat-fab> <mat-icon svgIcon="twitter"></mat-icon> </a
-    >&nbsp;&nbsp;
-    <a routerLink="/" mat-fab>
-      <mat-icon svgIcon="twitter"></mat-icon>
+  <div class="about__wrapper">
+    <div class="about_exp">
+      <h2 style="margin-bottom: 0.2rem">6 +</h2>
+      <p>
+        Years of <br />
+        Experience
+      </p>
+    </div>
+    <p>
+      Technical Lead with 6+ years of experience in architecting and maintaining
+      scalable, high-performance systems using JavaScript/TypeScript frameworks
+      like Node.js, Deno, and Angular. Adept at microservices architecture,
+      backend development, and database management (PostgreSQL, MongoDB).
+      Proficient in leading teams, gathering requirements, and delivering
+      successful deployments using AWS and Kubernetes. Enthusiastic about
+      learning new technologies and improving system efficiency.
+    </p>
+  </div>
+  <div class="social-media">
+    <a [href]="githubUrl" target="_blank" mat-fab>
+      <mat-icon svgIcon="github"></mat-icon>
     </a>
+    <a [href]="linkedinUrl" target="_blank" mat-fab>
+      <mat-icon svgIcon="linkedin"></mat-icon>
+    </a>
+    <a [href]="twitterUrl" target="_blank" mat-fab
+      ><mat-icon svgIcon="twitter"></mat-icon
+    ></a>
+    <a [href]="twitterUrl" target="_blank" mat-fab
+      ><mat-icon svgIcon="instagram"></mat-icon
+    ></a>
+    <a [href]="twitterUrl" target="_blank" mat-fab
+      ><mat-icon svgIcon="youtube"></mat-icon
+    ></a>
   </div>
 </div>

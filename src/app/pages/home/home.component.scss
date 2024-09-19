@@ -19,10 +19,13 @@ nav {
 
 .banner {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 24px;
   padding-bottom: 24px;
   & > div {
     flex: 1;
+    max-width: 50%;
     min-height: 520px;
     display: flex;
     flex-direction: column;
@@ -36,4 +39,20 @@ nav {
   text-align: center;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+.about__wrapper {
+  display: flex;
+}
+.about_exp {
+  text-align: left;
+  font-size: 20px;
+  margin-right: 48px;
+}
+
+[mat-fab] mat-icon {
+  height: 36px;
+  width: 36px;
+}
+.social-media a {
+  margin: 12px;
 }

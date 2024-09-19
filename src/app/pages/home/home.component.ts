@@ -3,6 +3,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from '../../constants/links';
 
 const TITLES = ['Ashish Gurjar', 'A Technical Lead', 'A Developer'];
 
@@ -16,6 +17,15 @@ const TITLES = ['Ashish Gurjar', 'A Technical Lead', 'A Developer'];
 export class HomeComponent implements OnInit {
   title = '';
   platformId: Object = inject(PLATFORM_ID);
+  get githubUrl() {
+    return GITHUB_URL;
+  }
+  get linkedinUrl() {
+    return LINKEDIN_URL;
+  }
+  get twitterUrl() {
+    return TWITTER_URL;
+  }
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       this.animateTitle(0);

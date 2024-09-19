@@ -17,13 +17,17 @@ export class AppComponent {
     //   'ag',
     //   sanitizer.bypassSecurityTrustResourceUrl('icon.svg')
     // );
-    // matIconReg.addSvgIcon(
-    //   'youtube',
-    //   sanitizer.bypassSecurityTrustResourceUrl('social/youtube.svg')
-    // );
     matIconReg.addSvgIcon(
-      'facebook',
-      sanitizer.bypassSecurityTrustResourceUrl('social/facebook.svg')
+      'github',
+      sanitizer.bypassSecurityTrustResourceUrl('social/github.svg')
+    );
+    matIconReg.addSvgIcon(
+      'linkedin',
+      sanitizer.bypassSecurityTrustResourceUrl('social/linkedin.svg')
+    );
+    matIconReg.addSvgIcon(
+      'youtube',
+      sanitizer.bypassSecurityTrustResourceUrl('social/youtube.svg')
     );
     matIconReg.addSvgIcon(
       'twitter',
