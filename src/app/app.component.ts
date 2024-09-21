@@ -1,17 +1,24 @@
-import { Component } from '@angular/core';
-import { MatIconRegistry } from '@angular/material/icon';
+import { Component, effect } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { RouterOutlet } from '@angular/router';
+import { ChatService } from './chat.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, MatButtonModule, MatIconModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  constructor(matIconReg: MatIconRegistry, sanitizer: DomSanitizer) {
+  isChatOpened = false;
+  constructor(
+    matIconReg: MatIconRegistry,
+    sanitizer: DomSanitizer,
+    public chatService: ChatService
+  ) {
     matIconReg.setDefaultFontSetClass('material-symbols-outlined');
     // matIconReg.addSvgIcon(
     //   'ag',
@@ -37,5 +44,11 @@ export class AppComponent {
       'instagram',
       sanitizer.bypassSecurityTrustResourceUrl('social/instagram.svg')
     );
+    effect(() => {
+      this.isChatOpened = chatService.isShown();
+    });
+  }
+  hideChat() {
+    this.chatService.toggle(false);
   }
 }

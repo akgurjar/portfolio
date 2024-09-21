@@ -4,8 +4,14 @@ import { RouterLink } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from '../../constants/links';
+import { ChatService } from '../../chat.service';
 
-const TITLES = ['Ashish Gurjar', 'A Technical Lead', 'A Developer'];
+const TITLES = [
+  'Ashish Gurjar',
+  'A Developer',
+  'A Technical Lead',
+  'A JavaScript Enthusiast',
+];
 
 @Component({
   selector: 'app-home',
@@ -26,6 +32,7 @@ export class HomeComponent implements OnInit {
   get twitterUrl() {
     return TWITTER_URL;
   }
+  constructor(public chatService: ChatService) {}
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       this.animateTitle(0);
@@ -49,5 +56,8 @@ export class HomeComponent implements OnInit {
       this.title += text.charAt(counter);
       counter++;
     }, 100);
+  }
+  showChat() {
+    this.chatService.toggle(true);
   }
 }
