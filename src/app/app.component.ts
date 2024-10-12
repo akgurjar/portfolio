@@ -4,11 +4,12 @@ import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { RouterOutlet } from '@angular/router';
 import { ChatService } from './chat.service';
+import { ChatComponent } from './components/chat/chat.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MatButtonModule, MatIconModule],
+  imports: [RouterOutlet, MatButtonModule, MatIconModule, ChatComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -47,8 +48,5 @@ export class AppComponent {
     effect(() => {
       this.isChatOpened = chatService.isShown();
     });
-  }
-  hideChat() {
-    this.chatService.toggle(false);
   }
 }

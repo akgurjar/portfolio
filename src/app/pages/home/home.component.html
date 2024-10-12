@@ -95,3 +95,71 @@
     ></a>
   </div>
 </div>
+<div class="skills__container max-width">
+  <h2 style="text-align: center">Technical Skills</h2>
+  <div class="skills__wrapper">
+    <!-- <span class="skills__main mat-elevation-z2">JS</span> -->
+    <ul style="flex: 1">
+      @for (skill of skills; track skill) {
+      <li>
+        <img [src]="skill.logo" [attr.alt]="skill.title" height="72px" />
+        <h5>{{ skill.title }}</h5>
+      </li>
+      }
+    </ul>
+  </div>
+</div>
+<div class="experiences__container max-width">
+  <h2 style="text-align: center">Work Experience</h2>
+  <div class="experiences__wrapper">
+    <img src="work.png" alt="Work Experiences" width="40%" />
+    <ul class="experiences">
+      <li>
+        <div>
+          <img src="" />
+          <div>
+            <h3>Humble Innovations PVT LTD</h3>
+            <p>Technical Lead | April 2024 - Present</p>
+          </div>
+        </div>
+        <ul>
+          <li>
+            Architected microservice-based backend solutions and implemented
+            single sign-on for new products.
+          </li>
+          <li>
+            Managed deployments on Kubernetes and AWS, enhancing scalability and
+            reliability.
+          </li>
+          <li>
+            Led requirement gathering and analysis for upcoming product lines,
+            ensuring alignment with business goals.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div>
+          <img src="" />
+          <div>
+            <h3>Appinventiv Technologies PVT LTD</h3>
+            <p>Technical Lead | April 2024 - Present</p>
+          </div>
+        </div>
+        <ul>
+          <li>
+            Architected microservice-based backend solutions and implemented
+            single sign-on for new products.
+          </li>
+          <li>
+            Managed deployments on Kubernetes and AWS, enhancing scalability and
+            reliability.
+          </li>
+          <li>
+            Led requirement gathering and analysis for upcoming product lines,
+            ensuring alignment with business goals.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

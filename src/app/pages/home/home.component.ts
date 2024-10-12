@@ -13,6 +13,25 @@ const TITLES = [
   'A JavaScript Enthusiast',
 ];
 
+const SKILLS = [
+  { logo: 'skills/deno.svg', title: 'DenoJS' },
+  { logo: 'skills/nodejs.svg', title: 'NodeJS' },
+  { logo: 'skills/nestjs.svg', title: 'NestJS' },
+  { logo: 'skills/fastify.svg', title: 'Fastify' },
+  { logo: 'skills/hapi.svg', title: 'HapiJS' },
+  { logo: 'skills/expressjs.svg', title: 'ExpressJS' },
+  { logo: 'skills/postgres.png', title: 'Postgres' },
+  { logo: 'skills/mongodb.png', title: 'MongoDB' },
+  { logo: 'skills/redis.png', title: 'Redis' },
+  { logo: 'skills/nodejs.svg', title: 'Neo4J' },
+  { logo: 'skills/grpc.png', title: 'gRPC' },
+  { logo: 'skills/kafka.png', title: 'Kafka' },
+  { logo: 'skills/angular.svg', title: 'Angular' },
+  { logo: 'skills/reactjs.webp', title: 'React JS' },
+  { logo: 'skills/html.svg', title: 'HTML 5' },
+  { logo: 'skills/css.svg', title: 'CSS 3' },
+];
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -22,7 +41,6 @@ const TITLES = [
 })
 export class HomeComponent implements OnInit {
   title = '';
-  platformId: Object = inject(PLATFORM_ID);
   get githubUrl() {
     return GITHUB_URL;
   }
@@ -32,6 +50,8 @@ export class HomeComponent implements OnInit {
   get twitterUrl() {
     return TWITTER_URL;
   }
+  readonly skills = SKILLS;
+  platformId: Object = inject(PLATFORM_ID);
   constructor(public chatService: ChatService) {}
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {

@@ -5,24 +5,5 @@
   Chat
 </button> -->
 @if (isChatOpened) {
-<div class="chat__container mat-elevation-z5">
-  <div class="chat__header">
-    <img src="chatbot.png" height="36" />
-    <span class="chat__title">Let's Talk</span>
-    <div style="flex: 1"></div>
-    <button mat-icon-button (click)="hideChat()">
-      <mat-icon>close</mat-icon>
-    </button>
-  </div>
-  <div class="chat__messages">
-    <div class="message message--command">Hello</div>
-    <div class="message message--result">Hello, how may i help you ?</div>
-  </div>
-  <div class="chat__input">
-    <textarea placeholder="Type ..."></textarea>
-    <button mat-mini-fab>
-      <mat-icon>send</mat-icon>
-    </button>
-  </div>
-</div>
+<app-chat class="mat-elevation-z5"></app-chat>
 }
