@@ -1,7 +1,7 @@
 ![FullStack](https://miro.medium.com/v2/resize:fit:828/format:webp/1*yw0TnheAGN-LPneDaTlaxw.gif)
 
 # Hi, I'm Ashish Gurjar
-- Technical Lead with 6 years of experience in architecting and maintaining scalable, high-performance systems
+- Technical Lead with 7 years of experience in architecting and maintaining scalable, high-performance systems
 - Specialized in JavaScript and microservice backend architectures
 - Currently working on Kubernetes, AWS, Deno, NodeJS, Postgresql, gRPC
 - Learning advance concepts of Kubernetes and AWS Cloud Services
