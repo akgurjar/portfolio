@@ -1,16 +1,14 @@
-import type { ComponentChildren } from "preact";
+import type { JSX } from "preact";
+import { twMerge } from "tailwind-merge";
 
-export interface ButtonProps {
-  onClick?: () => void;
-  children?: ComponentChildren;
-  disabled?: boolean;
-}
-
-export function Button(props: ButtonProps) {
+export default function Button(props: JSX.ButtonHTMLAttributes) {
   return (
     <button
       {...props}
-      class="px-2 py-1 border-gray-500 border-2 rounded bg-white hover:bg-gray-200 transition-colors"
+      class={twMerge(
+        "flex items-center text-sm h-10 px-3 rounded-full font-medium box-border",
+        props.class as string,
+      )}
     />
   );
 }

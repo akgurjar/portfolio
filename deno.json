@@ -21,6 +21,7 @@
     "fresh": "jsr:@fresh/core@^2.0.0-alpha.35",
     "preact": "npm:preact@^10.26.9",
     "@preact/signals": "npm:@preact/signals@^2.2.0",
+    "tailwind-merge": "npm:tailwind-merge@^3.3.1",
     "tailwindcss": "npm:tailwindcss@^3.4.3",
     "@fresh/plugin-tailwind": "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.7"
   },
@@ -41,5 +42,13 @@
       "html",
       "head"
     ]
+  },
+  "deploy": {
+    "project": "c061715b-032b-4e27-b83a-978888c71688",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "main.ts"
   }
 }
