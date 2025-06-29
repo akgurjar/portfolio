@@ -1,6 +1,22 @@
+import { page } from "fresh";
 import Header from "../../components/Header.tsx";
 import Link from "../../components/Link.tsx";
 import { define } from "../../utils.ts";
+
+export const metadata = {
+  title: "Blogs by Ashish Gurjar",
+  description:
+    "Explore insightful blogs by Ashish Gurjar, a software developer specializing in building smart applications with clean architecture.",
+  keywords:
+    "Ashish Gurjar, software developer, clean architecture, smart applications, JavaScript, TypeScript, MongoDB, PostgreSQL, Redis, GRPC, GraphQL",
+  image: "/banner.webp",
+};
+export const handler = define.handlers({
+  GET(ctx) {
+    ctx.state.metadata = metadata;
+    return page();
+  },
+});
 
 export default define.page(function Blogs() {
   return (

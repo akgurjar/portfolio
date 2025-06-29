@@ -1,6 +1,12 @@
 import { createDefine } from "fresh";
 
-// deno-lint-ignore no-empty-interface
-export interface State {}
+export interface State {
+  metadata?: {
+    title: string;
+    description: string;
+    keywords: string;
+    image: string;
+  };
+}
 
 export const define = createDefine<State>();
