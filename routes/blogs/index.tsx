@@ -2,6 +2,7 @@ import { page } from "fresh";
 import Header from "../../components/Header.tsx";
 import Link from "../../components/Link.tsx";
 import { define } from "../../utils.ts";
+import Footer from "../../components/Footer.tsx";
 
 export const metadata = {
   title: "Blogs by Ashish Gurjar",
@@ -39,6 +40,7 @@ export default define.page(function Blogs() {
         </div>
       </section>
       <p>Blogs</p>
+      <Footer />
     </>
   );
 });

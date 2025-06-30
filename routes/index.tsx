@@ -1,10 +1,17 @@
 import Button from "../components/Button.tsx";
+import Footer from "../components/Footer.tsx";
 import Header from "../components/Header.tsx";
 import InputEffect from "../islands/InputEffect.tsx";
 import { define } from "../utils.ts";
 
+const TITLES = [
+  "Ashish Gurjar",
+  "A Developer",
+  "A Technical Lead",
+  "A JavaScript Enthusiast",
+];
+
 export default define.page(function Home() {
-  const mailId = "ashishkgurjar@gmail.com";
   return (
     <>
       <section class="flex flex-col items-center bg-blue-100 min-h-screen">
@@ -13,7 +20,7 @@ export default define.page(function Home() {
           <div class="flex-1">
             <h3 class="text-4xl">Hello there, I'm</h3>
             <h1 class="text-5xl my-4 font-medium min-h-12">
-              <InputEffect texts={["Ashish Gurjar", "A Developer"]} />
+              <InputEffect texts={TITLES} />
             </h1>
             <p>
               Welcome to my portfolio of captivating digital experiences.
@@ -66,14 +73,10 @@ export default define.page(function Home() {
         </div>
       </section>
       <main>
-        <section class="p-10 bg-slate-800">
+        <section class="p-10 bg-white">
         </section>
       </main>
-      <footer class="bg-blue-900 text-white py-8">
-        <div class="container mx-auto text-center px-4">
-          <p>&copy; 2025 Ashish Gurjar. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 });
