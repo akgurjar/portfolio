@@ -5,3 +5,17 @@
 html {
   scroll-behavior: smooth;
 }
+
+dialog {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition-behavior: allow-discrete;
+}
+@starting-style {
+  dialog[open] {
+    transform: translateY(300%);
+    opacity: 0; /* Dialog starts transparent when it becomes open */
+  }
+  dialog::backdrop {
+    opacity: 0;
+  }
+}

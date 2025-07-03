@@ -1,7 +1,8 @@
-import Button from "./Button.tsx";
+import { twMerge } from "tailwind-merge";
 import Link from "./Link.tsx";
 import Logo from "./Logo.tsx";
-import { twMerge } from "tailwind-merge";
+import DialogTarget from "../islands/DialogTarget.tsx";
+import ConnectDialog from "./ConnectDialog.tsx";
 
 export default function Header(props: { readonly class?: string }) {
   return (
@@ -63,9 +64,13 @@ export default function Header(props: { readonly class?: string }) {
           Blogs
         </Link>
       </nav>
-      <Button class="px-4 text-current border border-solid border-current">
+      <DialogTarget
+        dialogTarget="connect-dialog"
+        class="px-4 text-current border border-solid border-current"
+      >
         Let's Talk
-      </Button>
+      </DialogTarget>
+      <ConnectDialog />
     </header>
   );
 }
