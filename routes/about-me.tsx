@@ -27,7 +27,7 @@ export default define.page(function AboutMe() {
         <Header class="max-w-5xl w-full text-white fixed z-50" />
         <div class="relative">
           <img
-            src="/banner.webp"
+            src="/images/banner-p.jpg"
             class="min-h-96 min-w-full object-cover"
             alt="Banner"
           />
