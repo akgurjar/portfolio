@@ -23,7 +23,7 @@ export default define.page(function AboutMe() {
   const yearsOfExperience = Math.round(new Date().getFullYear() - 2018);
   return (
     <>
-      <section class="flex flex-col items-center w-full bg-blue-500 text-white">
+      <section class="flex flex-col items-center w-full text-white">
         <Header class="max-w-5xl w-full text-white fixed z-50" />
         <div class="relative">
           <img

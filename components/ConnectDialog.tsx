@@ -10,7 +10,7 @@ export default function ConnectDialog() {
   return (
     <Dialog
       id="connect-dialog"
-      class="w-11/12 max-w-md py-4"
+      class="w-11/12 max-w-lg py-4"
     >
       <div class="flex items-center justify-center gap-4">
         <Link
@@ -42,22 +42,61 @@ export default function ConnectDialog() {
           </svg>
         </Link>
       </div>
-      <Tabs class="m-6" selectedTab={1}>
+      <Tabs class="m-6">
         <Tab label="Quick Contact">
-          Quick Contact Tab
+          <div class="flex gap-2 my-4">
+            <a
+              href="mailto:hello@ashishgurjar.dev"
+              class="flex-1 block border border-gray-700 rounded hover:border-blue-500/50"
+            >
+              <div class="flex items-center border-b border-gray-700 p-4 bg-gradient-to-r from-blue-500/10 to-transparent">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="fill-blue-500 h-8 w-8 mx-auto"
+                >
+                  <path d="M20 4H4C2.89 4 2 4.89 2 6V18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4zM20 18H4V8L12 13L20 8V18zM12 11L4 6H20L12 11z" />
+                </svg>
+                <span class="block flex-1 ml-4">Send Mail</span>
+              </div>
+              <div class="p-4">
+                <h3 class="font-medium">hello@ashishgurjar.dev</h3>
+                <p class="mt-2 opacity-60">Send me a email directly</p>
+              </div>
+            </a>
+            <a
+              href="/calender"
+              class="flex-1 block border border-gray-700 rounded hover:border-pink-500/50"
+            >
+              <div class="flex items-center border-b border-gray-700 p-4 bg-gradient-to-r from-pink-500/10 to-transparent">
+                <svg
+                  viewBox="0 -960 960 960"
+                  class="fill-pink-500 h-8 w-8 mx-auto"
+                >
+                  <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z" />
+                </svg>
+                <span class="block flex-1 ml-4">Book a Call</span>
+              </div>
+              <div class="p-4">
+                <h3 class="font-medium">Schedule a time slot</h3>
+                <p class="mt-2 opacity-60">Book a call on my calender</p>
+              </div>
+            </a>
+          </div>
         </Tab>
         <Tab label="Fill Form">
           <form class="mt-6" method="dialog">
-            <div class="flex gap-2 my-4">
+            <div class="flex gap-2 my-4 w-full">
               <Input
                 label="Full Name"
                 placeholder="Ashish Gurjar"
                 type="text"
+                class="block w-full"
               />
               <Input
                 label="Email ID"
                 placeholder="your.email@domain.com"
                 type="email"
+                class="block w-full"
               />
             </div>
             <Textarea

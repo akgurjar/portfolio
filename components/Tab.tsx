@@ -6,5 +6,9 @@ interface TabProps extends JSX.HTMLAttributes<HTMLDivElement> {
 
 export default function Tab(props: TabProps) {
   console.log(props.label);
-  return <div class="hidden">{props.children}</div>;
+  return (
+    <div {...props}>
+      {props.children}
+    </div>
+  );
 }
