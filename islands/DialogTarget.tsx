@@ -10,7 +10,6 @@ export default function DialogTarget<T>(
 ) {
   const onClick = () => {
     const dialog = document.getElementById(dialogTarget) as HTMLDialogElement;
-    console.log(dialog);
     dialog.showModal();
   };
   return <Button {...props} onClick={onClick} />;

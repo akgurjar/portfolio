@@ -22,24 +22,100 @@ export const handler = define.handlers({
 export default define.page(function Blogs() {
   return (
     <>
-      <section class="flex flex-col items-center bg-blue-500 text-white ">
+      <section class="flex flex-col items-center bg-gradient-to-r from-blue-600 to-pink-600 text-white ">
         <Header class="max-w-5xl w-full text-inherit" />
-        <div class="max-w-5xl w-full flex-1 mt-10 py-4">
-          <h1 class="text-6xl font-medium text-center">
-            PASS IT ON
+        <div class="max-w-2xl w-full flex-1 mt-10 py-4 flex flex-col items-center gap-4">
+          <span class="font-medium">THE BLOG</span>
+          <h1 class="text-2xl font-medium text-center">
+            Sharing thoughts, experiences, and insights on technology, life, and
+            everything in between.
           </h1>
-          <p class="text-center">
-            Knowledge increases by sharing but not by saving.
-          </p>
-          <div class="flex">
-            <Link href="?technology=html">HTML 5</Link>
-            <Link href="?technology=html">CSS 3</Link>
-            <Link href="?technology=html">HTML</Link>
-            <Link href="?technology=html">HTML</Link>
+          <div class="my-8 h-10 w-full max-w-80 bg-white/10 hover:bg-white/20 border border-white/30 rounded-md overflow-hidden has-[input:focus]:border-white/70 outline outline-1 outline-transparent has-[input:focus]:outline-white/70 transition-all duration-300 ease-in-out">
+            <input
+              type="search"
+              class="h-full w-full box-border appearance-none border-none outline-none bg-transparent px-2 m-0 placeholder-white/50"
+              placeholder="Search blogs..."
+            />
           </div>
         </div>
       </section>
-      <p>Blogs</p>
+      <main class="flex flex-wrap p-8 gap-8">
+        <div class="max-w-md bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+          <img
+            class="w-full h-52 object-cover rounded-t-xl"
+            src="https://placehold.co/600x400/4a90e2/ffffff?text=Tech+Insights"
+            alt="Tech Insights"
+          />
+          <div class="p-6">
+            <span class="text-sm text-gray-500">July 1, 2025</span>
+            <h3 class="font-bold text-xl text-gray-900 mt-2 mb-3">
+              <a href="#" class="hover:text-blue-600 transition duration-200">
+                The Rise of Serverless Architectures
+              </a>
+            </h3>
+            <p class="text-gray-700 text-base leading-relaxed line-clamp-3">
+              Exploring how serverless computing is changing the way we build
+              and deploy applications, focusing on efficiency and scalability.
+            </p>
+            <a
+              href="#"
+              class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              Read More &rarr;
+            </a>
+          </div>
+        </div>
+        <div class="max-w-md bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+          <img
+            class="w-full h-52 object-cover rounded-t-xl"
+            src="https://placehold.co/600x400/4a90e2/ffffff?text=Tech+Insights"
+            alt="Tech Insights"
+          />
+          <div class="p-6">
+            <span class="text-sm text-gray-500">July 1, 2025</span>
+            <h3 class="font-bold text-xl text-gray-900 mt-2 mb-3">
+              <a href="#" class="hover:text-blue-600 transition duration-200">
+                The Rise of Serverless Architectures
+              </a>
+            </h3>
+            <p class="text-gray-700 text-base leading-relaxed line-clamp-3">
+              Exploring how serverless computing is changing the way we build
+              and deploy applications, focusing on efficiency and scalability.
+            </p>
+            <a
+              href="#"
+              class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              Read More &rarr;
+            </a>
+          </div>
+        </div>
+        <div class="max-w-md bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+          <img
+            class="w-full h-52 object-cover rounded-t-xl"
+            src="https://placehold.co/600x400/4a90e2/ffffff?text=Tech+Insights"
+            alt="Tech Insights"
+          />
+          <div class="p-6">
+            <span class="text-sm text-gray-500">July 1, 2025</span>
+            <h3 class="font-bold text-xl text-gray-900 mt-2 mb-3">
+              <a href="#" class="hover:text-blue-600 transition duration-200">
+                The Rise of Serverless Architectures
+              </a>
+            </h3>
+            <p class="text-gray-700 text-base leading-relaxed line-clamp-3">
+              Exploring how serverless computing is changing the way we build
+              and deploy applications, focusing on efficiency and scalability.
+            </p>
+            <a
+              href="#"
+              class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              Read More &rarr;
+            </a>
+          </div>
+        </div>
+      </main>
       <Footer />
     </>
   );

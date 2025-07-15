@@ -106,13 +106,172 @@ export default define.page(function AboutMe() {
           </div>
         </div>
       </section>
-      <p>
-        About Me <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </p>
+      <main class="max-w-5xl w-full px-4 py-8 box-border mx-auto">
+        <section class="flex mr-4">
+          <div class="px-4">
+            <img
+              class="fill-current h-10 w-10 bg-white p-2 my-2 box-border rounded-xl"
+              src="https://www.quantitativebrokers.com/favicon.ico"
+              alt="QB"
+            />
+          </div>
+          <div class="flex-1 p-4 my-2 bg-white rounded-lg border border-gray-200 shadow-md">
+            <h3 class="text-sm font-semibold text-blue-500 dark:text-blue-500 mb-1">
+              Current Role
+            </h3>
+            <h1 class="text-xl font-bold mb-2">
+              Senior Software Engineer at Quantitative Brokers
+            </h1>
+            <ul class="list-disc list-inside">
+              <li>
+                Leading the redevelopment of an existing portal using Angular to
+                enhance performance and scalability for handling large datasets.
+              </li>
+              <li>
+                Implementing optimized front-end solutions to improve data
+                processing and user experience.
+              </li>
+              <li>
+                Collaborating with cross-functional teams to ensure seamless
+                integration with back-end systems and meet project objectives.
+              </li>
+            </ul>
+            <time class="mt-3 block text-sm font-medium text-gray-500 dark:text-gray-400">
+              October 2024 - Present
+            </time>
+          </div>
+        </section>
+        <section class="flex mr-4">
+          <div class="px-4">
+            <img
+              class="fill-current h-10 w-10 bg-white p-1 rounded-full my-2 box-border"
+              src="/companies/humble_logo.jpeg"
+              alt="Humblx"
+            />
+          </div>
+          <div class="flex-1 p-4 my-2 bg-white rounded-lg border border-gray-200 shadow-md">
+            <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-1">
+              Professional Experience
+            </h3>
+            <h1 class="text-xl font-bold mb-2">
+              Technical Lead at Humble Innovations
+            </h1>
+            <p class="leading-relaxed">
+              Leading the development of cloud-native applications, focusing on
+              scalable microservices architectures and robust API design.
+              Mentoring junior developers and contributing to technical
+              strategy.
+            </p>
+            <time class="mt-3 block text-sm font-medium text-gray-500 dark:text-gray-400">
+              April 2024 - October 2024
+            </time>
+          </div>
+        </section>
+        <section class="flex mr-4">
+          <div class="px-4">
+            <img
+              class="fill-current h-10 w-10 bg-white rounded-full my-2 box-border"
+              src="/companies/appinventiv_logo.jpeg"
+              alt="Appinvetiv"
+            />
+          </div>
+          <div class="flex-1 p-4 my-2 bg-white rounded-lg border border-gray-200 shadow-md">
+            <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-1">
+              Professional Experience
+            </h3>
+            <h1 class="text-xl font-bold mb-2">
+              Associate Technical Lead at Appinvetiv Technologies
+            </h1>
+            <p class="leading-relaxed">
+              Leading the development of cloud-native applications, focusing on
+              scalable microservices architectures and robust API design.
+              Mentoring junior developers and contributing to technical
+              strategy.
+            </p>
+            <time class="mt-3 block text-sm font-medium text-gray-500 dark:text-gray-400">
+              October 2018 - April 2024
+            </time>
+          </div>
+        </section>
+        <section class="flex mr-4">
+          <div class="px-4">
+            <svg
+              viewBox="0 -960 960 960"
+              class="fill-current h-10 w-10 p-1 bg-white rounded-full my-2 box-border"
+            >
+              <path d="M480-144 216-276v-240L48-600l432-216 432 216v312h-72v-276l-96 48v240L480-144Zm0-321 271-135-271-135-271 135 271 135Zm0 240 192-96v-159l-192 96-192-96v159l192 96Zm0-240Zm0 81Zm0 0Z" />
+            </svg>
+          </div>
+          <div class="flex-1 p-4 my-2 bg-white rounded-lg border border-gray-200 shadow-md">
+            <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-1">
+              Graduation
+            </h3>
+            <h1 class="text-xl font-bold mb-2">
+              Bachelor of Technology in Electronics & Communications Engineering
+            </h1>
+            <p class="leading-relaxed">
+              Graduated with First Class Honors from University of Technology,
+              specializing in Data Structures and Algorithms. Active participant
+              in various hackathons and coding clubs.
+            </p>
+            <time class="mt-3 block text-sm font-medium text-gray-500 dark:text-gray-400">
+              July 2014 - April 2018
+            </time>
+          </div>
+        </section>
+        <section class="flex mr-4">
+          <div class="px-4">
+            <svg
+              viewBox="0 -960 960 960"
+              class="fill-current h-10 w-10 p-1 bg-white rounded-full my-2 box-border"
+            >
+              <path d="M480-144 216-276v-240L48-600l432-216 432 216v312h-72v-276l-96 48v240L480-144Zm0-321 271-135-271-135-271 135 271 135Zm0 240 192-96v-159l-192 96-192-96v159l192 96Zm0-240Zm0 81Zm0 0Z" />
+            </svg>
+          </div>
+          <div class="flex-1 p-4 my-2 bg-white rounded-lg border border-gray-200 shadow-md">
+            <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-1">
+              Higher Secondary Education
+            </h3>
+            <h1 class="text-xl font-bold mb-2">
+              LBS School Sikar (Rajasthan)
+            </h1>
+            <p class="leading-relaxed">
+              Completed high school with a focus on Science and Mathematics.
+              Developed a strong foundation in problem-solving.
+            </p>
+            <time class="mt-3 block text-sm font-medium text-gray-500 dark:text-gray-400">
+              July 2011 - April 2012
+            </time>
+          </div>
+        </section>
+        {
+          /* <section class="flex mr-4">
+          <div class="px-4">
+            <svg
+              viewBox="0 -960 960 960"
+              class="fill-current h-10 w-10 p-1 bg-white rounded-full my-2 box-border"
+            >
+              <path d="M480-144 216-276v-240L48-600l432-216 432 216v312h-72v-276l-96 48v240L480-144Zm0-321 271-135-271-135-271 135 271 135Zm0 240 192-96v-159l-192 96-192-96v159l192 96Zm0-240Zm0 81Zm0 0Z" />
+            </svg>
+          </div>
+          <div class="flex-1 p-4 my-2 bg-white rounded-lg border border-gray-200 shadow-md">
+            <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-1">
+              Secondary Education
+            </h3>
+            <h1 class="text-xl font-bold mb-2">
+              Bhuvneshwari Shikshan Sansthan, Karauli (Rajasthan)
+            </h1>
+            <p class="leading-relaxed">
+              Completed secondary education with a focus on Science and Mathematics.
+              Developed a strong foundation in problem-solving.
+            </p>
+            <time class="mt-3 block text-sm font-medium text-gray-500 dark:text-gray-400">
+              July 2009 - April 2010
+            </time>
+          </div>
+        </section> */
+        }
+      </main>
       <Footer />
     </>
   );
