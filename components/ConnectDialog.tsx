@@ -49,7 +49,7 @@ export default function ConnectDialog() {
               href="mailto:hello@ashishgurjar.dev"
               class="flex-1 block border border-gray-700 rounded hover:border-blue-500/50"
             >
-              <div class="flex items-center border-b border-gray-700 p-4 bg-gradient-to-r from-blue-500/10 to-transparent">
+              <div class="flex items-center border-b border-gray-700 p-4 bg-linear-to-r from-blue-500/10 to-transparent">
                 <svg
                   viewBox="0 0 24 24"
                   class="fill-blue-500 h-8 w-8 mx-auto"
@@ -67,7 +67,7 @@ export default function ConnectDialog() {
               href="/calender"
               class="flex-1 block border border-gray-700 rounded hover:border-pink-500/50"
             >
-              <div class="flex items-center border-b border-gray-700 p-4 bg-gradient-to-r from-pink-500/10 to-transparent">
+              <div class="flex items-center border-b border-gray-700 p-4 bg-linear-to-r from-pink-500/10 to-transparent">
                 <svg
                   viewBox="0 -960 960 960"
                   class="fill-pink-500 h-8 w-8 mx-auto"

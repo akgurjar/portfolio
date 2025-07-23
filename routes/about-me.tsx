@@ -33,7 +33,7 @@ export default define.page(function AboutMe() {
           />
           <div class="z-40 absolute left-0 top-0 right-0 bottom-0 backdrop-blur-sm backdrop-brightness-50 flex flex-col items-center justify-center">
             <div class="max-w-4xl w-full text-center pt-16 flex flex-col items-center">
-              <h1 class="text-5xl font-bold w-fit text-transparent bg-gradient-to-r from-blue-600 to-pink-400 bg-clip-text">
+              <h1 class="text-5xl font-bold w-fit text-transparent bg-linear-to-r from-blue-600 to-pink-400 bg-clip-text">
                 Ashish Gurjar
               </h1>
               <h3 class="text-2xl my-4">

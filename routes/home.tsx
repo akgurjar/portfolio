@@ -48,7 +48,7 @@ export default define.page(function Home() {
       <main>
         <section
           id="hero"
-          class="relative bg-gradient-to-r from-indigo-500 to-purple-600 text-white flex items-center justify-center h-screen pt-16"
+          class="relative bg-linear-to-r from-indigo-500 to-purple-600 text-white flex items-center justify-center h-screen pt-16"
         >
           <div class="text-center px-4">
             <img

@@ -22,7 +22,7 @@ export const handler = define.handlers({
 export default define.page(function Blogs() {
   return (
     <>
-      <section class="flex flex-col items-center bg-gradient-to-r from-blue-600 to-pink-600 text-white ">
+      <section class="flex flex-col items-center bg-linear-to-r from-blue-600 to-pink-600 text-white ">
         <Header class="max-w-5xl w-full text-inherit" />
         <div class="max-w-2xl w-full flex-1 mt-10 py-4 flex flex-col items-center gap-4">
           <span class="font-medium">THE BLOG</span>
