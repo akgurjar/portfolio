@@ -3,9 +3,9 @@
   "specifiers": {
     "jsr:@deno/esbuild-plugin@^1.1.1": "1.1.1",
     "jsr:@deno/loader@~0.2.1": "0.2.1",
-    "jsr:@fresh/core@^2.0.0-alpha.37": "2.0.0-alpha.43",
-    "jsr:@fresh/core@^2.0.0-alpha.43": "2.0.0-alpha.43",
-    "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.8": "0.0.1-alpha.8",
+    "jsr:@fresh/core@^2.0.0-alpha.37": "2.0.0-alpha.45",
+    "jsr:@fresh/core@^2.0.0-alpha.45": "2.0.0-alpha.45",
+    "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.9": "0.0.1-alpha.9",
     "jsr:@std/bytes@^1.0.6": "1.0.6",
     "jsr:@std/crypto@1": "1.0.5",
     "jsr:@std/datetime@~0.225.2": "0.225.5",
@@ -47,8 +47,8 @@
     "@deno/loader@0.2.1": {
       "integrity": "c9fcc7309ce6a77306d37a7dc4b886e547aafc5204a4a28b0eafa523ffa5c9fc"
     },
-    "@fresh/core@2.0.0-alpha.43": {
-      "integrity": "cbfe807f843e813d79befe8178a802f43aee808516bfbecdb96be88477a61694",
+    "@fresh/core@2.0.0-alpha.45": {
+      "integrity": "39c227fdcbb433374b4241f9661fd0691106747f0d34de2205f65c7034b1849e",
       "dependencies": [
         "jsr:@deno/esbuild-plugin",
         "jsr:@std/crypto",
@@ -71,8 +71,8 @@
         "npm:preact-render-to-string"
       ]
     },
-    "@fresh/plugin-tailwind@0.0.1-alpha.8": {
-      "integrity": "9d09d9b862852909fd5ba5b870f5464b03f32d66aeb5e4074a05f7f8ede2045e",
+    "@fresh/plugin-tailwind@0.0.1-alpha.9": {
+      "integrity": "e2cddf75ffd3203950a79913eb35ec454e23df54cb95c7549d14172e5b3c4b59",
       "dependencies": [
         "jsr:@fresh/core@^2.0.0-alpha.37",
         "npm:@tailwindcss/postcss",
@@ -937,8 +937,8 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@fresh/core@^2.0.0-alpha.43",
-      "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.8",
+      "jsr:@fresh/core@^2.0.0-alpha.45",
+      "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.9",
       "npm:@preact/signals@^2.2.1",
       "npm:preact@^10.26.9",
       "npm:tailwind-merge@^3.3.1",
