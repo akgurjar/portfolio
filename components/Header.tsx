@@ -1,14 +1,14 @@
 import { twMerge } from "tailwind-merge";
 import Link from "./Link.tsx";
 import Logo from "./Logo.tsx";
-import DialogTarget from "../islands/DialogTarget.tsx";
 import ConnectDialog from "./ConnectDialog.tsx";
+import Button from "./Button.tsx";
 
 export default function Header(props: { readonly class?: string }) {
   return (
     <header
       class={twMerge(
-        "h-16 px-3 flex items-center justify-between text-blue-600",
+        "h-16 px-3 flex items-center justify-between",
         props.class,
       )}
     >
@@ -64,12 +64,14 @@ export default function Header(props: { readonly class?: string }) {
           Blogs
         </Link>
       </nav>
-      <DialogTarget
-        dialogTarget="connect-dialog"
-        class="px-4 text-current border border-solid border-current"
+      <button
+        command="show-modal"
+        commandfor="connect-dialog"
+        class="btn btn-outline btn-primary"
+        type="button"
       >
-        Let's Talk
-      </DialogTarget>
+        Let's Connect
+      </button>
       <ConnectDialog />
     </header>
   );

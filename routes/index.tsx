@@ -15,9 +15,9 @@ const TITLES = [
 export default define.page(function Home() {
   return (
     <>
-      <section class="flex flex-col items-center bg-blue-100 min-h-screen">
+      <section class="w-full flex flex-col items-center min-h-screen bg-white dark:bg-white/5">
         <Header class="max-w-5xl w-full" />
-        <div class="max-w-5xl w-full flex-1 flex items-center">
+        <div class="max-w-5xl w-full flex-1 flex gap-2 items-center p-4 flex-col-reverse md:flex-row">
           <div class="flex-1">
             <h3 class="text-4xl">Hello there, I'm</h3>
             <h1 class="text-5xl my-4 font-medium min-h-12">
@@ -58,25 +58,34 @@ export default define.page(function Home() {
               </Link>
             </div>
           </div>
-          <svg viewBox="0 0 479 467" width="0" height="0">
+          <svg viewBox="0 0 510 467" width="479" height="467">
             <defs>
               <clipPath id="mask0">
-                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                <path d="M12.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
               </clipPath>
             </defs>
+            <image
+              clip-path="url(#mask0)"
+              xlink:href="/images/photo-p.jpg"
+              width="490px"
+              height="467px"
+              x={0}
+              y={0}
+            />
           </svg>
-          <div></div>
-          <img
+          {
+            /* <img
             src="/images/photo-p.jpg"
             loading="lazy"
             alt="Profile"
-            class="object-cover scale-75"
-            style="height: 479px; width: 479px; clip-path: url(#mask0);"
-          />
+            class="w-full max-w-96 object-cover"
+            style="clip-path: path('M4.538 72.102 C16.790 37.772 56.685 27.027 90.959 14.545 C121.365 3.453 154.028 -7.380 183.058 6.983 C212.879 21.731 231.144 53.082 235.666 85.996 C240.016 117.028 224.606 145.241 205.748 170.366 C184.409 197.949 160.916 228.614 126.126 230.316 C88.636 232.115 55.053 207.411 32.179 178.608 C8.649 147.904 -8.471 108.411 4.538 72.102Z');"
+          /> */
+          }
         </div>
       </section>
       <main>
-        <section class="p-10 bg-white">
+        <section class="p-10 ">
         </section>
       </main>
       <Footer />

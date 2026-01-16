@@ -5,7 +5,7 @@ export default function Footer(props: { readonly class?: string }) {
   return (
     <footer
       class={twMerge(
-        "w-full bg-slate-800 text-slate-50 p-4 flex flex-col items-center",
+        "w-full bg-white dark:bg-white/5 p-4 flex flex-col items-center",
         props.class,
       )}
     >
@@ -27,7 +27,7 @@ export default function Footer(props: { readonly class?: string }) {
           <a href="/blogs">Blogs</a>
         </div>
       </div>
-      <p class="max-w-5xl w-full text-center mt-4 border-t border-slate-700 pt-4">
+      <p class="max-w-5xl w-full text-center mt-4 border-t border-slate-200 dark:border-slate-700 pt-4">
         Made with ❤️ using Deno Fresh and Tailwind CSS.
       </p>
     </footer>

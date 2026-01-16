@@ -26,9 +26,8 @@ export default function App({ Component, state }: PageProps<unknown, State>) {
         />
         <meta name="author" content="Ashish Gurjar" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body class="bg-gray-100 text-gray-900 font-sans">
+      <body class="bg-black/5 text-black dark:bg-black dark:text-white font-sans">
         <Component />
       </body>
     </html>
