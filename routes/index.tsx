@@ -84,8 +84,211 @@ export default define.page(function Home() {
           }
         </div>
       </section>
-      <main>
-        <section class="p-10 ">
+      <main class="max-w-5xl w-full mx-auto px-4 py-12 space-y-24">
+        {/* Skills Section */}
+        <section id="skills" class="text-center">
+          <h2 class="text-3xl font-bold mb-12">Technical Skills</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+            {[
+              {
+                name: "TypeScript",
+                icon: "/skills/typescript.svg",
+              },
+              {
+                name: "Deno",
+                icon: "/skills/deno-dark.svg",
+              },
+              {
+                name: "Node.js",
+                icon: "/skills/nodejs.svg",
+              },
+              {
+                name: "PostgreSQL",
+                icon: "/skills/postgresql.svg",
+              },
+              {
+                name: "MongoDB",
+                icon: "/skills/mongodb.svg",
+              },
+              {
+                name: "Redis",
+                icon: "/skills/redis.svg",
+              },
+              {
+                name: "Kafka",
+                icon: "/skills/kafka.svg",
+              },
+              {
+                name: "gRPC",
+                icon: "/skills/grpc.png",
+              },
+              {
+                name: "SocketIO",
+                icon: "/skills/socketio.svg",
+              },
+              {
+                name: "Angular",
+                icon: "/skills/angular.png",
+              },
+              {
+                name: "React",
+                icon: "/skills/react.svg",
+              },
+              {
+                name: "Next.js",
+                icon: "/skills/nextjs.svg",
+              },
+              {
+                name: "Docker",
+                icon: "/skills/docker.svg",
+              },
+              {
+                name: "Tailwind CSS",
+                icon: "/skills/tailwindcss.svg",
+              },
+              {
+                name: "GraphQL",
+                icon: "/skills/graphql.svg",
+              },
+              {
+                name: "Git",
+                icon: "/skills/git.svg",
+              },
+            ].map((skill) => (
+              <div key={skill.name} class="flex flex-col items-center group">
+                <div class="w-16 h-16 p-3 bg-white dark:bg-white/10 rounded-2xl shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="mt-3 text-sm font-medium">{skill.name}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Featured Projects Section */}
+        <section id="projects">
+          <div class="flex justify-between items-end mb-12">
+            <div>
+              <h2 class="text-3xl font-bold">Featured Projects</h2>
+              <p class="text-gray-600 dark:text-gray-400 mt-2">
+                Some of my most interesting work.
+              </p>
+            </div>
+            <Link
+              href="/portfolio"
+              class="text-blue-600 font-medium hover:underline"
+            >
+              View All Projects →
+            </Link>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8">
+            {[
+              {
+                title: "Smart Inventory System",
+                desc:
+                  "A cloud-native microservices application for real-time inventory tracking and management.",
+                tags: ["TypeScript", "Node.js", "Redis"],
+                image:
+                  "https://placehold.co/800x450/4a90e2/ffffff?text=Smart+Inventory",
+              },
+              {
+                title: "DeFi Analytics Dashboard",
+                desc:
+                  "A high-performance dashboard for tracking decentralized finance protocols and assets.",
+                tags: ["React", "GraphQL", "PostgreSQL"],
+                image:
+                  "https://placehold.co/800x450/ec4899/ffffff?text=DeFi+Analytics",
+              },
+            ].map((project) => (
+              <div
+                key={project.title}
+                class="group bg-white dark:bg-white/5 rounded-3xl overflow-hidden border border-transparent hover:border-blue-600/30 transition-all shadow-sm hover:shadow-xl"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  class="w-full aspect-video object-cover transition-transform group-hover:scale-105 duration-500"
+                />
+                <div class="p-6">
+                  <div class="flex gap-2 mb-3">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        class="px-2 py-1 text-xs font-semibold bg-gray-100 dark:bg-white/10 rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <h3 class="text-xl font-bold mb-2">{project.title}</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                    {project.desc}
+                  </p>
+                  <Link
+                    href="/portfolio"
+                    class="btn btn-sm btn-outline btn-primary rounded-full"
+                  >
+                    Learn More
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Experience Summary Section */}
+        <section
+          id="experience"
+          class="bg-blue-600 text-white rounded-[3rem] p-12 overflow-hidden relative"
+        >
+          <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl">
+          </div>
+          <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-3xl font-bold mb-6">
+                Built with 7+ Years of Experience
+              </h2>
+              <p class="text-blue-100 text-lg leading-relaxed mb-8">
+                I specialize in building scalable, high-performance systems with
+                clean architecture. From startups to enterprises, I bring
+                technical leadership and a passion for excellence to every
+                project.
+              </p>
+              <div class="grid grid-cols-2 gap-6">
+                <div>
+                  <div class="text-4xl font-bold">50+</div>
+                  <div class="text-blue-200">Projects Delivered</div>
+                </div>
+                <div>
+                  <div class="text-4xl font-bold">5+</div>
+                  <div class="text-blue-200">Companies Served</div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+              <h3 class="text-xl font-bold mb-4 italic">
+                "Technical Lead with a strong focus on high-performance
+                microservices and clean architecture."
+              </h3>
+              <div class="flex items-center gap-4">
+                <img
+                  src="/images/photo-p.jpg"
+                  alt="Ashish Gurjar"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <div class="font-bold">Ashish Gurjar</div>
+                  <div class="text-blue-200 text-sm">
+                    Senior Software Engineer
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
       <Footer />

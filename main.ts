@@ -1,4 +1,4 @@
-import { App, csp, csrf, staticFiles, trailingSlashes } from "fresh";
+import { App, csrf, staticFiles, trailingSlashes } from "fresh";
 import { type State } from "./utils.ts";
 
 export const app = new App<State>();
@@ -10,6 +10,13 @@ app.use(
 );
 
 app.use(trailingSlashes("never"));
-app.use(csp());
+app.use(async (ctx) => {
+  const resp = await ctx.next();
+  resp.headers.set(
+    "Content-Security-Policy",
+    "default-src 'self'; img-src 'self' https://raw.githubusercontent.com https://placehold.co https://www.quantitativebrokers.com data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';",
+  );
+  return resp;
+});
 
 app.fsRoutes();
